@@ -16,7 +16,7 @@ $token = $arg_arr[3];
 				<div class="collapse navbar-collapse" id="royalHospitalsNavbar">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link <?php echo ($token == 'ajouter-resutat-test.php') ? 'active-page' : ''; ?>" href="index.php">
+							<a class="nav-link <?php echo ($token == 'ajouter-resutat-test.php') ? 'active-page' : ''; ?>" href="#">
 								<i class="icon-devices_other nav-icon"></i>
 								Dashboard
 							</a>

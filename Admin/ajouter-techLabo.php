@@ -122,7 +122,7 @@ $result = $sth->fetchAll();
 										</div>
 										<div class=col-sm-6 col-12">
 											<div class="form-group">
-												<label for="inputSpeciality">Speciality</label>
+												<label for="inputSpeciality">Specialité</label>
 												<input type="text" class="form-control" id="inputSpeciality" placeholder="">
 											</div>
 										</div>

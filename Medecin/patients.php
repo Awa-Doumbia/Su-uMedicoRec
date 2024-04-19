@@ -156,7 +156,7 @@ $result = $sth->fetchAll();
 						<div class="col-xl-3 col-lg-4 col-sm-6 col-12">
 							<div class="card">
 								<div class="card-header">
-									<div class="card-title">Dentisterie</div>
+									<div class="card-title">Dentister</div>
 								</div>
 								<div class="card-body">
 									<div class="doctors-list">
