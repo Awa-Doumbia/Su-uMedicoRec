@@ -100,10 +100,10 @@ $result = $sth->fetchAll();
 								</div>
 								<div class="card-body">
 									<div class="doctors-list">
-										<a href="#">Dr. CISS</a>
-										<a href="#">Dr. DEMBADIANG</a>
-										<a href="#">Dr. CAMARA</a>
-										<a href="#">Dr. DIALLO</a>
+										<a href="#">Mme. CISS</a>
+										<a href="#">Mr. DEMBADIANG</a>
+										<a href="#">Mr. CAMARA</a>
+										<a href="#">Mme. DIALLO</a>
 									</div>
 								</div>
 							</div>
@@ -117,7 +117,7 @@ $result = $sth->fetchAll();
 									<div class="doctors-list">
 										<a href="#">Dr. NGOM</a>
 										<a href="#">Dr. THIAM</a>
-										<a href="#">Dr. CAMARA</a>
+										<a href="#">Mr. CAMARA</a>
 										<a href="#">Dr. BADIO</a>
 									</div>
 								</div>

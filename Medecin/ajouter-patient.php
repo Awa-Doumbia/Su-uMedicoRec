@@ -26,6 +26,7 @@
 
 		<!-- Main css -->
 		<link rel="stylesheet" href="css/main.min.css">
+    	<script src="https://cdn.tailwindcss.com"></script>
 
 
 		<!-- *************
@@ -65,6 +66,7 @@
 					<!-- Row start -->
 						<div class="col-sm-12">
 							<div class="card">
+                            <form id="">
 							<div id="example-vertical">
 								<h3>Information personelle</h3>
 								<section>
@@ -72,43 +74,43 @@
 										<div class="col-sm-4 col-12">
 											<div class="form-group">
 												<label for="fullName">Prénom</label>
-												<input type="text" class="form-control" id="fullName" placeholder="">
-											</div>
+												<input type="text" class="form-control" value="" name="prenom" id="prenom" placeholder="">
+                                            </div>
 										</div>
 										<div class="col-sm-4 col-12">
 											<div class="form-group">
 												<label for="patID">Nom de famille</label>
-												<input type="text" class="form-control" id="patID" placeholder="">
+												<input type="text" class="form-control" value="" name="nom" id="nom" placeholder="">
 											</div>
 										</div>
 										<div class="col-sm-4 col-12">
 											<div class="form-group">
 												<label for="agE">Numéro de téléphone</label>
-												<input type="text" class="form-control" id="agE" placeholder="">
-											</div>
-										</div>
-										<div class="col-sm-4 col-12">
-											<div class="form-group">
-												<label for="phoNe">Date de naissance</label>
-												<input type="text" class="form-control" id="phoNe" placeholder="">
+												<input type="text" class="form-control" value="" name="numero" id="numero" placeholder="">
 											</div>
 										</div>
 										<div class="col-sm-4 col-12">
 											<div class="form-group">
 												<label for="inputEmail">Adresse</label>
-												<input type="text" class="form-control" id="inputEmail" placeholder="">
+												<input type="text" class="form-control" value="" name="adresse" id="adresse" placeholder="">
 											</div>
 										</div>
 										<div class="col-sm-6 col-12">
 											<div class="form-group">
 												<label for="addreSs">Poids</label>
-												<input type="text" class="form-control" id="addreSs" rows="3" placeholder="">
+												<input type="text" class="form-control" value="" name="poids" id="poids" rows="3" placeholder="">
 											</div>
 										</div>
 										<div class="col-sm-6 col-12">
 											<div class="form-group">
 												<label for="biO">Taille</label>
-												<input type="text" class="form-control" id="biO" rows="3" placeholder="">
+												<input type="text" class="form-control" value="" name="taille" id="taille" rows="3" placeholder="">
+											</div>
+										</div>
+										<div class="col-sm-6 col-12">
+											<div class="form-group">
+												<label for="biO">Id patient</label>
+												<input type="text" class="form-control" value="" name="patientid" id="patientid" rows="3" placeholder="">
 											</div>
 										</div>
 									</div>
@@ -119,25 +121,25 @@
 										<div class="col-sm-4 col-12">
 											<div class="form-group">
 												<label for="fullName">Prénom</label>
-												<input type="text" class="form-control" id="fullName" placeholder="">
+												<input type="text" class="form-control" value="" name="nomUrg" id="nomUrg" placeholder="">
 											</div>
 										</div>
 										<div class="col-sm-4 col-12">
 											<div class="form-group">
 												<label for="patID">Nom de famille</label>
-												<input type="text" class="form-control" id="patID" placeholder="">
+												<input type="text" class="form-control" value="" name="prenomUrg" id="prenomUrg" placeholder="">
 											</div>
 										</div>
 										<div class="col-sm-4 col-12">
 											<div class="form-group">
 												<label for="agE">Numéro de téléphone</label>
-												<input type="text" class="form-control" id="agE" placeholder="">
+												<input type="text" class="form-control" value="" name="numeroUrg" id="numeroUrg" placeholder="">
 											</div>
 										</div>
 										<div class="col-sm-4 col-12">
 											<div class="form-group">
 												<label for="inputEmail">Adresse</label>
-												<input type="text" class="form-control" id="inputEmail" placeholder="">
+												<input type="text" class="form-control" value="" name="adresseUrg" id="adresseUrg" placeholder="">
 											</div>
 										</div>
 									</div>	
@@ -153,13 +155,11 @@
 
 													<!-- Inline Radios example -->
 													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-															value="option1">
+														<input class="form-check-input" type="radio" value="oui" name="hepatiteB" id="hepatiteB">
 														<label class="form-check-label" for="inlineRadio1">Oui</label>
 													</div>
 													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-															value="option2">
+														<input class="form-check-input" type="radio" value="non" name="hepatiteB" id="hepatiteB">
 														<label class="form-check-label" for="inlineRadio2">Non</label>
 													</div>
 
@@ -172,13 +172,11 @@
 												<div class="">
 													<!-- Inline Radios example -->
 													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-															value="option1">
+														<input class="form-check-input" type="radio" name="varicelle" value="oui" id="varicelle">
 														<label class="form-check-label" for="inlineRadio1">Oui</label>
 													</div>
 													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-															value="option2">
+														<input class="form-check-input" type="radio" name="varicelle" value="non" id="varicelle">
 														<label class="form-check-label" for="inlineRadio2">Non</label>
 													</div>
 												</div>
@@ -190,13 +188,11 @@
 												<div class="">
 													<!-- Inline Radios example -->
 													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-															value="option1">
+														<input class="form-check-input" type="radio" name="rougeole" value="oui" id="rougeole">
 														<label class="form-check-label" for="inlineRadio1">Oui</label>
 													</div>
 													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-															value="option2">
+														<input class="form-check-input" type="radio" name="rougeole" value="non" id="rougeole">
 														<label class="form-check-label" for="inlineRadio2">Non</label>
 													</div>
 												</div>
@@ -205,25 +201,25 @@
 										<div class="col-sm-6 col-12">
 											<div class="form-group">
 												<label for="phoNe">Antécédents médicaux importants (chirurgie, blessures, maladie grave) :</label>
-												<textarea class="form-control" id="phoNe" placeholder=""></textarea>
+												<textarea class="form-control" value="" name="antecedentsMédImp" id="antecedentsMédImp" placeholder=""></textarea>
 											</div>
 										</div>
 										<div class="col-sm-6 col-12">
 											<div class="form-group">
 												<label for="inputEmail">Énumérez tous les problèmes médicaux (asthme, convulsions, maux de tête) :</label>
-												<textarea class="form-control" id="inputEmail" placeholder=""></textarea>
+												<textarea class="form-control" value="" name="problemesMéd" id="problemesMéd" placeholder=""></textarea>
 											</div>
 										</div>
 										<div class="col-sm-6 col-12">
 											<div class="form-group">
 												<label for="addreSs">Énumérez tous les médicaments pris régulièrement :</label>
-												<textarea class="form-control" id="addreSs" rows="3" placeholder=""></textarea>
+												<textarea class="form-control" value="" name="medicamentsReg" id="medicamentsReg" rows="3" placeholder=""></textarea>
 											</div>
 										</div>
 										<div class="col-sm-6 col-12">
 											<div class="form-group">
 												<label for="biO">Énumérez toutes les allergies :</label>
-												<textarea class="form-control" id="biO" rows="3" placeholder=""></textarea>
+												<textarea class="form-control" value="" name="allergies" id="allergies" rows="3" placeholder=""></textarea>
 											</div>
 										</div>
 									</div>	
@@ -237,13 +233,11 @@
 												<div class="">
 													<!-- Inline Radios example -->
 													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-															value="option1">
+														<input class="form-check-input" type="radio" name="assurance" value="oui" id="assurance">
 														<label class="form-check-label" for="inlineRadio1">Oui</label>
 													</div>
 													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-															value="option2">
+														<input class="form-check-input" type="radio" name="assurance" value="non" id="assurance">
 														<label class="form-check-label" for="inlineRadio2">Non</label>
 													</div>
 												</div>
@@ -252,29 +246,31 @@
 										<div class="col-sm-4 col-12">
 											<div class="form-group">
 												<label for="patID">Nom de la compagnie d'assurance :</label>
-												<input type="text" class="form-control" id="patID" placeholder="">
+												<input type="text" class="form-control" value="" name="compagnie" id="compagnie" placeholder="">
 											</div>
 										</div>
 										<div class="col-sm-4 col-12">
 											<div class="form-group">
 												<label for="agE">Adresse</label>
-												<input type="text" class="form-control" id="agE" placeholder="">
+												<input type="text" class="form-control" value="" name="AdresseCompagnie" id="AdresseCompagnie" placeholder="">
 											</div>
 										</div>
 										<div class="col-sm-4 col-12">
 											<div class="form-group">
 												<label for="phoNe">Numéro de police:</label>
-												<input type="text" class="form-control" id="phoNe" placeholder="">
+												<input type="text" class="form-control" value="" name="numeroPolice" id="numeroPolice" placeholder="">
 											</div>
 										</div>
 										<div class="col-sm-4 col-12">
 											<div class="form-group">
 												<label for="inputEmail">Date d'expiration</label>
-												<input type="text" class="form-control" id="inputEmail" placeholder="">
+												<input type="text" class="form-control" value="" name="expiration" id="expiration" placeholder="">
 											</div>
 										</div>
 									</div>	
-								</section>
+									<input type='button' id='saverecords'  class="flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg" value ='Soumettre' />
+                                </section>
+							</form>
 							</div>
 						</div>
 						</div>
@@ -313,6 +309,43 @@
 
 		<!-- Main Js Required -->
 		<script src="js/main.js"></script>
+		<script>
+			$('#saverecords').on( 'click', function(){
+                    var prenom=$("#prenom").val();
+					 var nom=$("#nom").val();
+					 var numero=$("#numero").val();
+					 var adresse=$("#adresse").val();
+					 var poids=$("#poids").val();
+					 var taille=$("#taille").val();
+					 var nomUrg=$("#nomUrg").val();
+					 var prenomUrg=$("#prenomUrg").val();
+					 var numeroUrg=$("#numeroUrg").val();
+					 var adresseUrg=$("#adresseUrg").val();
+					 var hepatiteB=$("#hepatiteB").val();
+					 var varicelle=$("#varicelle").val();
+					 var rougeole=$("#rougeole").val();
+					 var antecedentsMédImp=$("#antecedentsMédImp").val();
+					 var problemesMéd=$("#problemesMéd").val();
+					 var medicamentsReg=$("#medicamentsReg").val();
+					 var allergies=$("#allergies").val();
+					 var assurance=$("#assurance").val();
+					 var compagnie=$("#compagnie").val();
+					 var AdresseCompagnie=$("#AdresseCompagnie").val();
+					 var numeroPolice=$("#numeroPolice").val();
+					 var expiration=$("#expiration").val();
+					 var patientid=$("#patientid").val();
+          var url = 'patientInsert.php';
+
+          $.post( url, {prenom:prenom, nom:nom, numero:numero, adresse:adresse, poids:poids, taille:taille, nomUrg:nomUrg, prenomUrg:prenomUrg, numeroUrg:numeroUrg, adresseUrg:adresseUrg, hepatiteB:hepatiteB, varicelle:varicelle, rougeole:rougeole, antecedentsMédImp:antecedentsMédImp, problemesMéd:problemesMéd, medicamentsReg:medicamentsReg, allergies:allergies,assurance:assurance, compagnie:compagnie, AdresseCompagnie:AdresseCompagnie, numeroPolice:numeroPolice, expiration:expiration, patientid:patientid})
+          .done(function( data ) {
+                $("#saverecords").val('Success');
+                toastr.success('Records has been successfully saved');
+                setTimeout(function(){
+                    window.location.reload(1);
+                }, 4500);
+            });
+       });
+		</script>
 
 	</body>
 

@@ -13,10 +13,9 @@ $token = $arg_arr[3];
 						<i></i>
 					</span>
 				</button>
-				<div class="collapse navbar-collapse" id="royalHospitalsNavbar">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link <?php echo ($token == 'index.php') ? 'active-page' : ''; ?>" href="index.php">
+							<a class="nav-link <?php echo ($token == 'index.php') ? 'active-page' : ''; ?>" href="http://127.0.0.1:8000/">
 								<i class="icon-devices_other nav-icon"></i>
 								Dashboard
 							</a>
@@ -37,5 +36,4 @@ $token = $arg_arr[3];
 							</ul>
 						</li>
 					</ul>
-				</div>
 			</nav>

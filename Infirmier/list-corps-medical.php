@@ -1,3 +1,17 @@
+<?php
+session_start();
+error_reporting(0);
+include('includes/db.php');
+if (strlen($_SESSION['user_country']==0)) {
+  header('location:logout.php');
+  } else{
+    $uid=$_SESSION['user_country'];
+    $sth = $dbconn->prepare("select * from login where id='$uid'");
+$sth->execute();
+/* Fetch all of rows in the result set */
+$result = $sth->fetchAll();
+
+    ?>
 <!doctype html>
 <html lang="en">
 
@@ -86,10 +100,10 @@
 								</div>
 								<div class="card-body">
 									<div class="doctors-list">
-										<a href="#">Dr. CISS</a>
-										<a href="#">Dr. DEMBADIANG</a>
-										<a href="#">Dr. CAMARA</a>
-										<a href="#">Dr. DIALLO</a>
+										<a href="#">Mme. CISS</a>
+										<a href="#">Mr. DEMBADIANG</a>
+										<a href="#">Mr. CAMARA</a>
+										<a href="#">Mme. DIALLO</a>
 									</div>
 								</div>
 							</div>
@@ -103,7 +117,7 @@
 									<div class="doctors-list">
 										<a href="#">Dr. NGOM</a>
 										<a href="#">Dr. THIAM</a>
-										<a href="#">Dr. CAMARA</a>
+										<a href="#">Mr. CAMARA</a>
 										<a href="#">Dr. BADIO</a>
 									</div>
 								</div>
@@ -143,3 +157,4 @@
 	</body>
 
 </html>
+<?php } ?>

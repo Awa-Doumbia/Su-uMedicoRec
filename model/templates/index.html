@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+{% load static %}
+<form action="predictImage" method="post" enctype="multipart/form-data">
+	{% csrf_token %}
+	<section class="text-gray-600 body-font">
+		<div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+		<div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+			<h1 class="title-font font-medium text-3xl text-gray-900">Système d'aide au classement des patients</h1>
+<p class="leading-relaxed mt-4">Ce système est conçu pour aider les médecins à classer efficacement les patients en fonction de leurs symptômes. Veuillez entrer les symptômes du patient ci-dessous, et notre système fournira une prédiction du spécialiste médical approprié pour aider à orienter le traitement du patient.</p>
+</div>
+		<div class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+			<h2 class="text-gray-900 text-lg font-medium title-font mb-5">Spécialiste médical approprié : <br><span style="color:red"> {{prediction}}</span></h2>
+			<div class="relative mb-4">
+				<textarea id="imgPredict" name="imgPredict" class="w-full bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            </div>
+            <button class="flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">Submit</button>
+        </div>
+		</div>
+  	</section>
+</form>
+
+{% endblock body %}

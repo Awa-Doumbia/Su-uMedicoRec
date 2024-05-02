@@ -2,14 +2,14 @@
 session_start();
 error_reporting(0);
 include('includes/db.php');
-if (strlen($_SESSION['user_country']==0)) {
-  header('location:logout.php');
-  } else{
-    $uid=$_SESSION['user_country'];
-    $sth = $dbconn->prepare("select * from login where id='$uid'");
-$sth->execute();
-/* Fetch all of rows in the result set */
-$result = $sth->fetchAll();
+// if (strlen($_SESSION['user_country']==0)) {
+//   header('location:logout.php');
+//   } else{
+//     $uid=$_SESSION['user_country'];
+//     $sth = $dbconn->prepare("select * from login where id='$uid'");
+// $sth->execute();
+// /* Fetch all of rows in the result set */
+// $result = $sth->fetchAll();
 
     ?>
 <!doctype html>
@@ -40,6 +40,7 @@ $result = $sth->fetchAll();
 
 		<!-- Main css -->
 		<link rel="stylesheet" href="css/main.min.css">
+    	<script src="https://cdn.tailwindcss.com"></script>
 
 
 		<!-- *************
@@ -81,7 +82,7 @@ $result = $sth->fetchAll();
 						<div class="col-xl-3 col-lg-4 col-sm-6 col-12">
 							<div class="card">
 								<div class="card-header">
-									<div class="card-title">Neurochirurgie</div>
+									<div class="card-title">Dermatologue</div>
 								</div>
 								<div class="card-body">
 									<div class="doctors-list">
@@ -96,7 +97,7 @@ $result = $sth->fetchAll();
 						<div class="col-xl-3 col-lg-4 col-sm-6 col-12">
 							<div class="card">
 								<div class="card-header">
-									<div class="card-title">Dermatologie</div>
+									<div class="card-title">Gastro-entérologue</div>
 								</div>
 								<div class="card-body">
 									<div class="doctors-list">
@@ -111,7 +112,7 @@ $result = $sth->fetchAll();
 						<div class="col-xl-3 col-lg-4 col-sm-6 col-12">
 							<div class="card">
 								<div class="card-header">
-									<div class="card-title">Cardiologie</div>
+									<div class="card-title">Hépatologue</div>
 								</div>
 								<div class="card-body">
 									<div class="doctors-list">
@@ -126,7 +127,7 @@ $result = $sth->fetchAll();
 						<div class="col-xl-3 col-lg-4 col-sm-6 col-12">
 							<div class="card">
 								<div class="card-header">
-									<div class="card-title">Ophtalmologie</div>
+									<div class="card-title">Allergologue</div>
 								</div>
 								<div class="card-body">
 									<div class="doctors-list">
@@ -141,7 +142,7 @@ $result = $sth->fetchAll();
 						<div class="col-xl-3 col-lg-4 col-sm-6 col-12">
 							<div class="card">
 								<div class="card-header">
-									<div class="card-title">Orthopédie</div>
+									<div class="card-title">Arthrose</div>
 								</div>
 								<div class="card-body">
 									<div class="doctors-list">
@@ -156,7 +157,7 @@ $result = $sth->fetchAll();
 						<div class="col-xl-3 col-lg-4 col-sm-6 col-12">
 							<div class="card">
 								<div class="card-header">
-									<div class="card-title">Dentister</div>
+									<div class="card-title">Pédiatre</div>
 								</div>
 								<div class="card-body">
 									<div class="doctors-list">
@@ -171,7 +172,7 @@ $result = $sth->fetchAll();
 						<div class="col-xl-3 col-lg-4 col-sm-6 col-12">
 							<div class="card">
 								<div class="card-header">
-									<div class="card-title">Rhumatologie</div>
+									<div class="card-title">Hépatologue</div>
 								</div>
 								<div class="card-body">
 									<div class="doctors-list">
@@ -186,7 +187,7 @@ $result = $sth->fetchAll();
 						<div class="col-xl-3 col-lg-4 col-sm-6 col-12">
 							<div class="card">
 								<div class="card-header">
-									<div class="card-title">Psychiatrie</div>
+									<div class="card-title">Médecine Interne</div>
 								</div>
 								<div class="card-body">
 									<div class="doctors-list">
@@ -232,4 +233,4 @@ $result = $sth->fetchAll();
 	</body>
 
 </html>
-<?php } ?>
+<?php //} ?>
